@@ -1,0 +1,5 @@
+var configurationBoardBorderColor = 'rgb(137,193,255)'
+var configurationSelectedPieceColor = 'rgb(66,156,234)'
+var configurationAvailableMove = 'rgba(66,156,234,0.5)'
+var configurationLastMove = 'rgba(37, 90, 168,0.5)'
+var configurationChatMove = 'rgba(181, 227, 255,0.5)'

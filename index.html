@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Twitch pixel</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="contentView"></canvas>
+        <div class="playerButtons">
+            <div class="bottomButtons">
+                <button id="resign">Resign</button>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="options">Channel name(required):
+                <input id="nameInput"></input>
+                <button id="saveName">save name</button></br>
+                </br>
+                Streamer side: <button id="whiteColor">white</button> <button id="blackColor">black</button>
+                <label id="currentSide">currently: white</label>
+                </br>
+                </br>
+                Streamer game time: <button id="1min">1 min</button> <button id="3min">3 min</button> <button id="5min">5 min</button> <button id="10min">10 min</button>
+                <label id="currentTime">currently: 10 min</label></br>
+                </br>
+                Increment time: <button id="0sec">0 sec</button> <button id="2sec">2 sec</button> <button id="5sec">5 sec</button>
+                <label id="incrementalTime">currently: 0 sec</label></br>
+                </br>
+                Chat response time: <button id="30sec">30 sec</button> <button id="45sec">45 sec</button> <button id="60sec">60 sec</button>
+                <label id="chatResponseTime">currently: 30 sec</label></br>
+                </br>
+                Hide chat votes: <button id="showPredictions">Show</button> <button id="hidePredictions">Hide</button>
+                <label id="showPredictionsState">currently: Show</label></br>
+                </br>
+                <button id="startGame">start new game</button>
+            </div>
+            <div class="gameState">
+                </br>
+                <label class="centeredLabel" style="font-size:x-large;" id="gameStateLabel">DRAW</label>
+                </br>
+                <label class="centeredLabel">CURRENT SCORE</label>
+                </br>
+                </br>
+                Chat's score: <label id="gameStateChat"></label>
+                </br>
+                </br>
+                Streamer's score: <label id="gameStateStreamer"></label>
+                </br>
+                </br>
+                <button id="startNextGame">Start next game</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="utils.js"></script>
+<script src="MessageModel.js"></script>
+<script src="configuration.js"></script>
+<script src="resourceLoadingManager.js"></script>
+<script src="ChessPieceModel.js"></script>
+<script src="BoardModel.js"></script>
+<script src="parser.js"></script>
+<script src="contentViewMethods.js"></script>
+<script src="userInteractionUI.js"></script>
+<script src="ClickActions.js"></script>
+<script src="ChessMoveInterpreter.js"></script>
+<script src="options.js"></script>
+<script src="messageInterpreter.js"></script>
+<script src="app.js"></script>
+
+</html>

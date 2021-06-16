@@ -1,0 +1,104 @@
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                overflow: hidden;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+            
+            html {
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
+            
+            #container {
+                position: relative;
+            }
+            
+            #contentView {
+                position: absolute;
+            }
+            
+            .overlay {
+                position: absolute;
+                width: 100vw;
+                min-height: 100vh;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            
+            .playerButtons {
+                pointer-events: none;
+                position: absolute;
+                width: 100vw;
+                min-height: 100vh;
+            }
+            
+            .options {
+                background: rgb(255, 255, 255);
+                margin-left: 25vw;
+                margin-top: 25vh;
+                width: 50vw;
+                height: 50vh;
+                border: 3px solid black;
+                padding-top: 2vh;
+                padding-left: 2vh;
+                padding-right: 2vh;
+                padding-bottom: 2vh;
+            }
+            
+            .gameState {
+                background: rgb(255, 255, 255);
+                margin-left: 25vw;
+                margin-top: 25vh;
+                width: 50vw;
+                height: 50vh;
+                border: 3px solid black;
+                padding-top: 2vh;
+                padding-left: 2vh;
+                padding-right: 2vh;
+                padding-bottom: 2vh;
+            }
+            
+            canvas {
+                border: 1px solid black;
+            }
+            
+            button {
+                padding: 10px;
+                font-weight: bold;
+                left: 0;
+                top: 0;
+                background: rgb(46, 103, 209);
+                color: white;
+                border: none;
+                position: relative;
+            }
+            
+            button:hover {
+                background: rgb(75, 132, 255);
+            }
+            
+            #nameInput {
+                width: 20vh;
+            }
+            
+            #startGame {
+                float: right;
+            }
+            
+            #startNextGame {
+                float: right;
+            }
+            
+            .centeredLabel {
+                display: block;
+                text-align: center;
+            }
+            
+            #resign {
+                pointer-events: all;
+                margin-left: 55vw;
+                margin-top: 95vh;
+            }
